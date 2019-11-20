@@ -20,6 +20,7 @@ import './sylius-address-book';
 import './sylius-province-field';
 import './sylius-variant-images';
 import './sylius-variants-prices';
+import './sylius-select-shipping';
 
 $(document).ready(() => {
   $('.popup-js').popup();
@@ -69,7 +70,7 @@ $(document).ready(() => {
   });
 
   $('#sylius-product-adding-to-cart').addToCart();
-
+  $('#sylius-shipping-methods').selectShipping();
   $('#sylius-shipping-address').addressBook();
   $('#sylius-billing-address').addressBook();
   $(document).provinceField();
