@@ -70,12 +70,12 @@ $(document).ready(() => {
   });
 
   $('#sylius-product-adding-to-cart').addToCart();
-  $('#sylius-shipping-methods').selectShipping();
   $('#sylius-shipping-address').addressBook();
   $('#sylius-billing-address').addressBook();
   $(document).provinceField();
   $(document).variantPrices();
   $(document).variantImages();
+  $(document).selectShipping();
 
   $('body').find('input[autocomplete="off"]').prop('autocomplete', 'disable');
 });
